@@ -53,9 +53,13 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
         } else {
             holder.imgMovie.setImageResource(R.drawable.ic_no_image);
         }
+
+        //set icon favorite khi thêm vào danh sách favorite
         if (movie.isFavorite()) {
             holder.imgFavorite.setImageResource(R.drawable.icon_favorite_big_on);
-        } else {
+        }
+        // set icon favorite khi đưa ra khỏi danh sách favorite
+        else {
             holder.imgFavorite.setImageResource(R.drawable.icon_favorite_big_off);
         }
 
